@@ -1,0 +1,33 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    text-align: center;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+#color-display {
+    height: 100px;
+    width: 250px;
+}
+
+.color-show span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    background-color: #000000;
+    text-transform: uppercase;
+    color: white;
+    border: 3px solid #E5E5E5;
+}
+
+#generate-btn {
+    width: 100%;
+}
