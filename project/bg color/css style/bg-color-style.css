@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color-div span {
+    position: relative;
+    font-weight: 500;
+    font-size: 40px;
+    font-family: 'Lucida Sans', Verdana, sans-serif;
+}
+.color-div input {
+    width: 50%;
+}
+.color-div div {
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
