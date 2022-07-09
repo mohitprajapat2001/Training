@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    align-items: center;
+}
+
+h1 {
+    padding: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.time {
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    width: 20%;
+    /* height: 159px; */
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #000000a9);
+}
+
+.time span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hour-head {
+    background-color: #007EA1;
+    text-transform: uppercase;
+    color: white;
+}
+
+.minute-head {
+    background-color: #6DA102;
+    text-transform: uppercase;
+    color: white;
+}
+
+.sec-head {
+    background-color: #D55000;
+    text-transform: uppercase;
+    color: white;
+}
+
+.period-head {
+    background-color: #1A9367;
+    text-transform: uppercase;
+    color: white;
+}
+
+.hour-show {
+    background-color: #00A3CD;
+    padding: 20%;
+    font-weight: 900;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.minute-show {
+    background-color: #87CD08;
+    padding: 20%;
+    font-weight: 900;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.sec-show {
+    background-color: #F4984A;
+    padding: 20%;
+    font-weight: 900;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.period-show {
+    background-color: #1BB982;
+    padding: 20%;
+    font-weight: 900;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: white;
+}

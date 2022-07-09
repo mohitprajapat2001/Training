@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Tutorial</title>
+</head>
+<body>
+    <h1>Welcome to My Page</h1>
+    <div id="FirstContainer" class="container">
+        <button id="btn" onclick="func()">
+            Click Me
+        </button>
+    </div>
+    <p id="p1"></p>
+    <h1 class="heading1">
+        Heading Styled using style tag
+    </h1>
+    <h1 class="heading2">
+        Heading Styled using style tag
+    </h1>
+    <h1 class="heading3">
+        Heading Styled using style tag
+    </h1>
+</body>
+<!-- <script src="index.js"></script> -->
+<script>  
+    window.document.body.style.cursor = "wait";   
+    console.log(-5/0)
+    var set = new Set();    
+set.add("jQuery");    
+set.add("AngularJS");    
+set.add("Bootstrap");    
+console.log(set)
+const [,,s] = set;
+console.log(s);
+for (let elements of set) {    
+ console.log(typeof(elements)); }   
+ reverseString("mohit is good boy")
+ function reverseString(str) {
+    let string = str.split("").reverse().join("")
+   console.log(string)
+}
+
+let arr1 = [1,2,3,4,5,6,7,8,9,0];
+let arr2 = [1,2,4,4,5,6,7,8,9];
+let arr3 =  [];
+let arr4 =  [];
+arr1size = arr1.length
+arr2size = arr2.length
+for (i=0; i<arr1size; i++){
+for (j=0; j<arr1size; j++){
+    if (arr1[i]==arr2[j] ){
+        arr3[j]=arr1[i]
+        // console.log("intersection of array")
+    }}}
+    console.log("arr3 = "+arr3)
+    let k = 0;
+    for (i=0;i<arr3.length; i++){
+    for (j=0;j<arr3.length; j++){
+        if (arr3[i] == arr3[j]){
+            // arr3 = 1,2,4,4,5,6,7,8,9
+        arr3[k]=arr1[i]
+    k = k+1}
+    }
+    }
+    </script> 
+</html>
