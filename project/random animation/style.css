@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #154fff;
+}
+.img {
+    height: 100px;
+    padding: 15px;
+}
+.animation img {
+    height: 50px;
+}

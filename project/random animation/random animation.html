@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="animate.png" type="image/x-icon">
+    <title>Random Animation!</title>
+</head>
+
+<body>
+
+    <div class="container-lg main-div">
+        <div class="choose">
+            <a type="button"><img class="img hamburger-img" src="burger.png" alt="hamburger animation"></a>
+            <a type="button"><img class="img psp-img" src="psp.png" alt="hamburger animation"></a>
+        </div>
+    </div>
+    <div class="animation">
+        <img src="" id="psp-img" alt="">
+        <img src="" id="hamburger-img" alt="">
+    </div>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        $(".psp-img").click(() => {
+            $(".main-div").hide(1, () => {
+                setInterval(() => {
+                    $('#psp-img').fadeToggle(1800);
+                    function mainFunc() {
+                        let random = "";
+                        let character = "1234";
+                        for (i = 0; i < 1; i++)
+                            random = random + character[Math.floor(Math.random() * 4)];
+                            // console.log(random)
+                        $('#psp-img').attr('src', 'static/psp/img-' + random + '.png');
+                    }
+                    mainFunc();
+                }, 2000);
+            });
+        });
+        $(".hamburger-img").click(() => {
+            $(".main-div").hide(1, () => {
+                setInterval(() => {
+                    $('#hamburger-img').fadeToggle(1800);
+                    function mainFunc() {
+                        let random = "";
+                        let character = "1234";
+                        for (i = 0; i < 1; i++)
+                            random = random + character[Math.floor(Math.random() * 4)];
+                            // console.log(random)
+                        $('#psp-img').attr('src', 'static/hamburger/img-' + random + '.png');
+                    }
+                    mainFunc();
+                }, 2000);
+            });
+        });
+    })
+</script>
+
+</html>
