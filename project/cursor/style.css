@@ -26,6 +26,7 @@ body {
     z-index: 10000;
     border-radius: 100%;
     pointer-events: none;
+    transition: transform 1s;
 }
 h1:hover + .cursor {
     transform: scale(10);
