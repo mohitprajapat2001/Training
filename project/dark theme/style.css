@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.main-content {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+img {
+    height: 45px;
+    float: right;
+}

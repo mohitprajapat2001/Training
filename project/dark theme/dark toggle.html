@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="light-mode.png" type="image/x-icon">
+    <title>Dark toggle!</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light nav-bar">
+        <img id="dark" src="dark-mode.png" alt="">
+        <img id="light" src="light-mode.png" alt="">
+    </nav>
+    <div class="main-content">
+        <div>
+            <h1>Light Mode Dark Mode</h1>
+            <br>
+            <p>Shah Rukh Khan (born 2 November 1965), also known by the initialism SRK, is an Indian actor, film
+                producer, and television personality who works in Hindi films. Referred to in the media as the "Baadshah
+                of Bollywood" (in reference to his 1999 film Baadshah), "King of Bollywood" and "King Khan", he has
+                appeared in more than 80 films, and earned numerous accolades, including 14 Filmfare Awards. The
+                Government of India has awarded him the Padma Shri, and the Government of France has awarded him the
+                Ordre des Arts et des Lettres and the Legion of Honour. Khan has a significant following in Asia and the
+                Indian diaspora worldwide. In terms of audience size and income, he has been described as one of the
+                most successful film stars in the world.</p>
+        </div>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script>
+    $(document).ready(() => {
+        $("#light").hide();
+        $("#dark").click(() => {
+            $("#light").show()
+            $("#dark").hide()
+            $(".main-content").css("color", "white")
+            $("body").css("background-color", "black")
+        })
+        $("#light").click(() => {
+            $("#dark").show()
+            $("#light").hide()
+            $(".main-content").css("color", "black")
+            $("body").css("background-color", "white")
+        })
+    })
+</script>
+
+</html>
