@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="card.png" type="image/x-icon">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div class="card">
+            <div class="card-content">
+                <span class="img"><img src="static/idea.png" class="card-img-top" alt="">
+                </span>
+                <span class="Card-title">
+                    <h5 class="card-title">Digital products</h5>
+                </span>
+                <p class="card-text">Digital Branding <br> Web & mobile sites <br>user interface <br> responsive tech
+                    content</p>
+        </div>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script>
+        $(".card").mouseenter(()=>{
+            $(".card").css("background-color","#171619");
+            $(".card").css("box-shadow","7px 10px #1E1C21");
+            // console.log("hello")
+        $(".card").mouseleave(()=>{
+            $(".card").css("background-color","transparent");
+            $(".card").css("box-shadow","none");
+                })
+
+        })
+    </script>
+
+</html>

@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: #222328;
+    /* #171619 */
+    height: 100vh;
+    align-items: center;
+}
+.card {
+    color: white;
+    background-color: transparent;
+    /* background-color: #171619; */
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    width: 30%;
+    height: 60%;
+    border: none;
+}
+
+.img img {
+    height:150px;
+    width: 150px;
+    padding: 25px;
+}
+
+.Card-title {
+    text-transform: uppercase;
+}
