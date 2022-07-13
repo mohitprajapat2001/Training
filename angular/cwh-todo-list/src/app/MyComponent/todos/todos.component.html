@@ -1,7 +1,11 @@
 <!-- <p>todo works</p> -->
 <div class="container">
-  <app-add-todos [todo] = "todo" (todoAdd)="AddTodo($event)"></app-add-todos>
-</div>
+  <app-add-todos (todoAdd)="AddTodo($event)"></app-add-todos>
+
+<div *ngIf="this.todos.length===0; else elseBlock">No todos to show</div>
+<ng-template #elseBlock>
 <div class="container text-center"  *ngFor="let todo of todos">
   <app-todo-list [todo] = "todo" (todoDelete)="deleteTodo($event)"></app-todo-list>
+</div>
+</ng-template>
 </div>

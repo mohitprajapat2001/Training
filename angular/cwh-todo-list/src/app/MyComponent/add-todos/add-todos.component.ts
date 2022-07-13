@@ -18,7 +18,7 @@ export class AddTodosComponent implements OnInit {
   onSubmit(x){
     var tile = x.target.elements[0].value;
     var description = x.target.elements[1].value;
-    console.log("TITLE:"+tile,"desc:"+description);
+    console.log("TITLE:"+typeof(tile)+tile,"desc:"+description);
     var todo = {
       sno:0,
       title:tile,
@@ -26,7 +26,6 @@ export class AddTodosComponent implements OnInit {
       active:true
     }
     this.todoAdd.emit(todo);
-    // this.todoAdd.emit(todo);
     console.log(todo)
     }
 }
