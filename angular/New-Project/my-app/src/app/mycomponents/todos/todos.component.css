@@ -1,0 +1,7 @@
+input:hover {
+    background-color: antiquewhite;
+}
+span:hover {
+    background-color: rgb(144, 178, 207);
+    cursor: pointer;
+}

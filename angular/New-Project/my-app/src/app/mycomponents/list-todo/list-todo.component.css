@@ -1,0 +1,17 @@
+.todolist input {
+    background-color: white;
+    text-transform: uppercase;
+}
+.todolist input:hover {
+    background-color: antiquewhite;
+}
+.todolist span:hover {
+    background-color: rgb(144, 178, 207);
+    cursor: pointer;
+}
+.input-group-text img {
+    height: 24px;
+}
+.strike {
+    text-decoration: line-through;
+}

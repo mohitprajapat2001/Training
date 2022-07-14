@@ -19,7 +19,11 @@
     </tbody>
   </table> -->
 <div class="my-3">
-  <h1>{{todo.title}}</h1>
-<p>{{todo.desc}}</p>
-<button class="btn btn-dark" (click)="onBtnClick(todo)">Delete</button>
+  <h1 [ngClass]="{'strike': !todo.active}">{{todo.title}}</h1>
+  <p [ngClass]="{'strike': !todo.active}">{{todo.desc}}</p>
+  <div>
+    <input type="checkbox" class="form-check-input" id="{{i}}" (click)="onToggle(todo)">
+    <label class="form-check-label" for="exampleCheck1">toggle</label>
+  </div>
+  <button class="btn btn-dark" (click)="onBtnClick(todo)">Delete</button>
 </div>

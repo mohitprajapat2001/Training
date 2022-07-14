@@ -1,0 +1,14 @@
+<div class="container">
+  <app-add-todo (todoAdd)="addTodo($event)"></app-add-todo>
+<div *ngIf="this.todos.length===0; else elseBlock"  class="input-group mb-3">
+  <input type="text" class="form-control" value="No todos to show" aria-label="Username" aria-describedby="basic-addon1" disabled>
+        <div class="input-group-prepend">
+            <span class="input-group-text"><img src="https://img.icons8.com/fluency/26/000000/completed-task.png"/></span>
+          </div>
+</div>
+<ng-template #elseBlock>
+  <div *ngFor="let todo of todos;index as i">
+    <app-list-todo [todo]="todo" [i]="i" (todoDelete)="deleteTodo($event)" (todoToggle)="toggleTodo($event)"></app-list-todo>
+  </div>
+</ng-template>
+</div>

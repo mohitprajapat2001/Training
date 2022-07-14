@@ -1,0 +1,11 @@
+<div class="todolist">
+    <div class="input-group mb-3" id="title{{i}}">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="check{{i}}" (click)="onToggle(todo)">📝</span>
+        </div>
+        <input [ngClass]="{'strike': !todo.active}" type="text" class="form-control" value="{{todo.title}}" aria-label="Username" aria-describedby="basic-addon1" disabled>
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="delete{{i}}" (click)="onDelete(todo)"><img src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-delete-miscellaneous-kiranshastry-lineal-color-kiranshastry.png"/></span>
+          </div>
+      </div>
+</div>
