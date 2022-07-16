@@ -1,0 +1,10 @@
+* {
+    top: 0;
+    left: 0;
+}
+header a {
+    color: rgb(240, 220, 220);
+}
+header a:hover {
+    color: #5bc0de ;
+}
