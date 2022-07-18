@@ -1,1 +1,12 @@
-  <app-new></app-new>
+<app-header></app-header>
+<app-new (noteAdd)="addNote($event)"></app-new>
+<div *ngIf="this.notes.length===0; else elseBlock">
+    <span class="input-group-text"><img src="https://img.icons8.com/fluency/26/000000/completed-task.png"/>No Notes Here</span>
+  </div>
+  <ng-template #elseBlock>
+    <div *ngFor="let note of notes;">
+      <app-list-notes [note]="note" (noteDelete)="deleteNote($event)"></app-list-notes>
+    </div>
+  </ng-template>
+<app-list-notes></app-list-notes>
+<app-footer></app-footer>

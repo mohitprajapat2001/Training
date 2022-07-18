@@ -1,23 +1,48 @@
-<header class="p-3 bg-dark text-white">
-    <div class="container">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-          <img src="https://img.icons8.com/color/48/000000/bootstrap.png" class="bi me-2" width="40" height="40" role="img" aria-label="Bootstrap">
-        </a>
+<style>
+  .container-xxl{
+    background-color: #2f2fa2;
+    margin:0;
+    padding: 0;
+    color: white;
+  }
+  .header-img {
+    width: 25%;
+  }
+  img {
+    margin-left: 5%;
+  }
+  span {
+    color: #f64c72;
+    font-size: medium;
+    font-weight: 500;
+    display: block;
+  }
+  .nav-item{
+    cursor: pointer;
+  }
+  .nav-item a {
+    color: white;
+    background-color: #2f2fa2;
+  }
+  .nav-item a:hover {
+    color: white;
+    background-color: #242582;
+  }
+  .nav-item .active {
+    background-color: #f64c72;
+  }
+</style>
+<div class="container-xxl">
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"  (mouseenter)="classAddElement()" (mouseleave)="classRemoveElement()">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none header-img">
+      <img src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/32/000000/external-notes-business-kiranshastry-lineal-color-kiranshastry.png"/>
+      <span class="fs-4">Notes App</span>
+    </a>
 
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" name="list">
-          <li><a href="#" class="nav-link px-2" name="home">Home</a></li>
-          <li><a href="#" class="nav-link px-2"  name="About">About</a></li>
-        </ul>
-
-        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-          <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
-        </form>
-
-        <div class="text-end">
-          <button type="button" class="btn btn-outline-light me-2">Login</button>
-          <button type="button" class="btn btn-warning">Sign-up</button>
-        </div>
-      </div>
-    </div>
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+    </ul>
   </header>
+</div>

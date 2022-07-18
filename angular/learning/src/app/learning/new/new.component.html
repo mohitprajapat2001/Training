@@ -1,39 +1,14 @@
- <!-- <app-header></app-header>
- <!-- <input type="text" id="username" name="color" [(ngModel)]="color"> -->
-<!--<button (click)="getName()">Get Name</button>
-<br>
-<input type="text" [value]=username>
-
-<div>
-<h1 *ngIf="show=='yes'; then elseif else elseblock">Hello if</h1>
-<ng-template #elseif>
-    <h1>Hello elseif</h1>
-</ng-template>
-<ng-template #elseblock>
-    <h1>Hello Else</h1>
-</ng-template>
-
-</div> -->
-<!-- <ng-template [ngIf]="color=='red'">Red</ng-template><br>
-<ng-template [ngIf]="color=='green'">Green</ng-template><br>
-<ng-template [ngIf]="color=='blue'">Blue</ng-template><br> -->
-<!-- <div [ngSwitch]="color">
-    <h1 *ngSwitchCase="'red'">red block</h1>
-    <h1 *ngSwitchCase="'green'">green block</h1>
-    <h1 *ngSwitchCase="'blue'">blue block</h1>
-</div> -->
-<form #simpleForm="ngForm" (ngSubmit)="getformval(simpleForm.value)">
-    <input type="text" name="username" ngModel id="username" placeholder="username">
-    <input type="text" name="age" ngModel id="age" placeholder="age">
-    <button type="submit">Submit</button>
-</form> -->
-
-<!-- <p *ngFor="let alert of alerts">
-    <ngb-alert [type]="alert.type" (closed)="close(alert)">{{ alert.message }}</ngb-alert>
-  </p>
-  <p>
-    <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
-  </p> -->
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
+<div class="container-xxl main-div">
+    <button type="button" class="button-add" data-bs-toggle="collapse" data-bs-target="#divDescription">
+        <div class="input-group mb-3 todoinput">
+            <input type="text" class="form-control" placeholder="Add Note Title" aria-label="Username" name="title" id="title" [(ngModel)]="title"
+                aria-describedby="basic-addon1">
+            <span class="input-group-text" (click)='onAdd()'>📍</span>
+        </div>
+    </button>
+    <div id="divDescription" class="accordion-collapse collapse">
+        <div class="accordion-body">
+            <textarea id="not" placeholder="Enter Your Title Description Here" name="desc" id="desc" [(ngModel)]="desc"></textarea>
+        </div>
+    </div>
+</div>

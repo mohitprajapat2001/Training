@@ -1,0 +1,14 @@
+.div-list {
+    padding: 1em;
+}
+.toast {
+    display: inline;
+    background-color: white;
+    width: 90px;
+}
+.toast-body {
+    background-color: aliceblue;
+}
+strong {
+    background-color: transparent;
+}

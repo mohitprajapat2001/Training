@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { NewComponent } from './learning/new/new.component';
 import { HeaderComponent } from './learning/header/header.component';
 import { FooterComponent } from './learning/footer/footer.component';
+import { ListNotesComponent } from './learning/list-notes/list-notes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ListNotesComponent
   ],
   imports: [
     BrowserModule,
