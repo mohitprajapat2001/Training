@@ -1,0 +1,24 @@
+<button (click)="gettodos()">click me</button>
+<div class="container text-center">
+  <a routerLink="new">New Link</a>
+  <a routerLink="">Home Link</a>
+</div>
+<router-outlet></router-outlet>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">User id</th>
+        <th scope="col">title</th>
+        <th scope="col">active</th>
+        <th scope="col">id</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of todos">
+        <th scope="row">{{item.id}}</th>
+        <td>{{item.title}}</td>
+        <td>@{{item.completed}}</td>
+        <td>{{item.userId}}</td>
+    </tr>
+    </tbody>
+  </table>

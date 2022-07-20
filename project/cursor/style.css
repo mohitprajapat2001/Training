@@ -23,11 +23,12 @@ body {
     left: 0;
     background-color: white;
     mix-blend-mode: difference;
+    /* mix-blend-mode: hue; */
     z-index: 10000;
     border-radius: 100%;
     pointer-events: none;
-    transition: transform 1s;
+    transition: transform 10s;
 }
 h1:hover + .cursor {
-    transform: scale(10);
+    transform: scale(30);
 }
